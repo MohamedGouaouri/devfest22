@@ -31,16 +31,16 @@ class MainActivity : ComponentActivity() {
 //                    color = Color.Black
                 ) {
 //                    LauncherScreen()
-//                    NavHost(navController = navController, startDestination = Routes.DevicesListScreen.route){
-//                        composable(route = Routes.DevicesListScreen.route){
-//                            Home(navController = navController)
-//                        }
-//                        composable(route = Routes.DeviceDetailScreen.route + "/{deviceId}"){
-//                            DeviceDetails(navController = navController)
-//                        }
-//                    }
+                    NavHost(navController = navController, startDestination = Routes.DevicesListScreen.route){
+                        composable(route = Routes.DevicesListScreen.route){
+                            Home(navController = navController)
+                        }
+                        composable(route = Routes.DeviceDetailScreen.route + "/{deviceId}"){
+                            DeviceDetails(navController = navController)
+                        }
+                    }
 //                    PredictionsScreen(navController = navController)
-                    EnergyCost(navController = navController)
+//                    EnergyCost(navController = navController)
                 }
             }
         }
